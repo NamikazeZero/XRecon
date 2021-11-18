@@ -60,6 +60,9 @@ Its Ok, Create The Suggestions If You Have :D
 - [x] Other
 
 <div align="center">
+ 
 #### Have Fun :D
 
 #### 🗿
+
+ </div>

@@ -1,0 +1,10 @@
+tabulate
+dnspython
+requests
+urllib3
+python-whois
+whois
+googlesearch-python
+email_validator
+pyshorteners
+BeautifulSoup

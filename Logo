@@ -1,0 +1,37 @@
+#!/bin/env python
+
+# ======================================= #
+
+r = "\033[31m"
+g = "\033[32m"
+y = "\033[33m"
+b = "\033[34m"
+p = "\033[35m"
+d = "\033[2;37m"
+w = "\033[0m"
+
+# ======================================= #
+
+print(f"""{b}
+                          _cyqyc_
+                      :>3qKKKKKKKq3>:
+                  ';CpKKKKKKKKKKKKKKKpC;'
+              -"iPKKKKKKKKKKKKKKKKKKKKKKKPi"-
+          `~v]KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK]v~`
+       ,rwKKKKKKKKKKKKKPv;,:'-':,;vPKKKKKKKKKKKKKwr,
+      !KKKKKKKKKKKKKKK/             !KKKKKKKKKKKKKKK!
+      !KKKKKKKKKKKKKKf               CKKKKKKKKKKKKKK!
+      !KKKKKKKKKKKKKp-               -qKKKKKKKKKKKKK!
+      !KKKKKKKKKKKKK>"               "\KKKKKKKKKKKKK!
+      !KKKKKKKw;,_'-                   .-:,"wKKKKKKK!
+      !KKKKKKKKhi*;"                   ";*ihKKKKKKKK!
+      !KKKKKKKKKKKKK;                 ;KKKKKKKKKKKKK!
+      !KKKKKKKKKKKKK2>'             '>2KKKKKKKKKKKKK!
+      !KKKKKKKKKKKKKKKZ             ZKKKKKKKKKKKKKKK!
+      !KKKKKKKKKKKKKKK5             eKKKKKKKKKKKKKKK!
+      !KKKKKKKKKKKqC;-               -;CqKKKKKKKKKKK!
+      <KKKKKKKKkr,                       ,rSKKKKKKKK<
+       -"v]qj;-                             -;jq]v"-
+       {w}""")
+
+

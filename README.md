@@ -59,6 +59,7 @@ Its Ok, Create The Suggestions If You Have :D
 - [x] Virus ( Android  , Windows  , MacOSX )
 - [x] Other
 
+<div align="center">
 #### Have Fun :D
 
 #### 🗿

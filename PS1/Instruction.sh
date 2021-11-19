@@ -27,7 +27,7 @@ if [[ $PS1 == "Y" ]]; then
   cd XRecon
   cd PS1
   cp -f bash.bashrc bash.bashrc1
-  cp -f .Sanz .Sanz1
+  cp -f Sanz .Sanz1
   mv bash.bashrc1 $HOME
   mv .Sanz1 $HOME
   cd $HOME

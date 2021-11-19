@@ -1,0 +1,77 @@
+#!/bin/env python3
+
+# Modules #
+
+import os
+import time
+import sys
+from os import geteuid
+
+# Colors #
+
+red = "\033[91;1m"
+reset = "\033[0m"
+green = "\033[92;1m"
+cyan = "\033[96;1m"
+yellow = "\033[93;1m"
+magenta = "\033[95;1m"
+blue = "\033[94;1m"
+white = "\033[97;1m"
+blink = "\033[5m"
+
+
+# ====================================== #
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    SOFT = '\033[2;37m'
+    THINK = '\033[0m'
+    
+# ======================================= #
+
+r = "\033[31m"
+g = "\033[32m"
+y = "\033[33m"
+b = "\033[34m"
+p = "\033[35m"
+d = "\033[2;37m"
+w = "\033[0m"
+
+# ======================================= #
+
+W = f"{w}\033[1;47m"
+R = f"{w}\033[1;41m"
+G = f"{w}\033[1;42m"
+Y = f"{w}\033[1;43m"
+B = f"{w}\033[1;44m"
+
+# ======================================= #
+
+# Neofetch #
+
+try:
+  os.system('neofetch --ascii_distro Arch')
+except:
+  os.system('apt install neofetch')
+
+# Terminal / User Name #
+
+print(f"{w}   {r}•{w} Name {r}  :{w} AriqGamerzcraft {w}") # Change AriqGamerzcraft Text To Your Name 😉
+
+# Root #
+
+if geteuid() != 0:
+    print(f"{w}   {r}•{w} Status {r}:{w} Not Root {w}")
+else:
+    print(f"{w}   {r}•{w} Status {r}:{w} Rooted {w}")
+
+# Distro #
+
+print(f"{w}   {r}•{w} Distro {r}:{w} Arch {w}")

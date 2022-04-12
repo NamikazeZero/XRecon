@@ -1,2 +1,77 @@
-import zlib,base64
-exec(zlib.decompress(base64.b64decode("eJyVlW1v2jAQx9/nU5zSF8AK4SEtfRKTpmmruk3ai3YvJkBWCg51C05qO2UZ5bvv7IQ6dK6yWUL4/vfz+RxfLge3jHcpf4I0V3cJH3geW6WJUPDt6vrGi0WyMrOAzaF0vKuqyqXepy41ky41Fi71wanOqUtVFbacCPqYUalkW9B2Itsyl553O/InvTAc9y7Co5XvLUqzfxEO0Fxb8wRNYc0+mrk1QzRnecRhBC/xhqgtFyLKq6IOM98TcXUPRSYqWL+n4wsqqbIqKjjmNIZVxHizde4BjlQwrpr+ZgvlIDjAbwVxIlaRaopWFdP+8ZR0NTQhhGty3/+sXSTodAJCmi3y/JdfW93uAUwmEz19Beg8DIJuQrpdg1TSWbvCQaPTacAOfR0OndXR2Gz3Baietr12pLPZfsiwjAXAuZ4L9ngZraj4PRNRrFDZyxBDtIsfE21zBW/E/JlkKrulLzFhP+h/x3x1zs6/nxP0k9xsx9CHKf5fqWiZ17KDguXzhFPJolo+NPyXKI14LXtk2B+cKTqHaxUpKmvXHJs1n0XEZ7QWHhr4ayJofeInhr2kyNRnfmrgm0w80PpHeGbgT7+YehP1fWNIuqQz/S4znmZ437aNjMF2mOuC+s4pfEwyrkQOFpxaDt7vXpOYLRXFjRbNYofWrkVYR8qW7K5sFiwGY8JoBP1CMrIumGYRkS6r0KAC7SrFCYYWvNcl4oSOLJSZ2pCmNJzssWVjUxNOamipB10MTujEQgtTBU7q1FLKXL+TOrNUWQvi0NcVgI8agiDwD8vrN7eey4Ci7yWSpOcOJ+DXNca+zbF/YO/GXRqE6B5PSKPgi4bv/QFyJR7I")))
+#bin/env python2
+
+import LIST
+from LIST.id import *
+from LIST.it import *
+from LIST.jp import *
+from LIST.us import *
+from LIST.fr import *
+from LIST.kr import *
+from LIST.de import *
+from LIST.tr import *
+import requests,re,os,sys
+
+b="\033[0;34m"
+g="\033[1;32m"
+w="\033[1;37m"
+r="\033[1;31m"
+y="\033[1;33m"
+cyan = "\033[0;36m"
+lgray = "\033[0;37m"
+dgray = "\033[1;30m"
+ir = "\033[0;101m"
+reset = "\033[0m"
+
+
+
+def main():
+    print("{}        ____ ").format(r)
+    print("   _[]_/____\__n_ ")
+    print("  |_____.--.__()_|")
+    print("  |    //# \\\    |")
+    print("{}  |    \\\__//    | ").format(w)
+    print("  |     '--'     | ")
+    print("{}  '--------------'{}--------------  ").format(r,w)
+    print("{}  | {}Author  : {}~Ariq {} | ").format(r,w,r,w,r,ir,reset,w)
+    print("{}  | {}Youtube : {}~Ariq {}| ").format(r,w,r,w,r,ir,reset,w)
+    print("{}  '---------------{}--------------  ").format(r,w)
+    print ("  {}[ 1 ] {}Italy").format(r,w)
+    print ("  {}[ 2 ] {}Indonesia").format(r,w)
+    print ("  {}[ 3 ] {}Japan").format(r,w)
+    print ("  {}[ 4 ] {}United States").format(r,w)
+    print ("  {}[ 5 ] {}France").format(r,w)
+    print ("  {}[ 6 ] {}Korea").format(r,w)
+    print ("  {}[ 7 ] {}German").format(r,w)
+    print ("  {}[ 8 ] {}Turkey").format(r,w)
+    print ("  {}[ 9 ] {}Exit").format(r,w)
+    print ""
+    select = input("\033[1;31m[ \033[1;37mSelect One Country \033[1;31m]\033[1;37m > ")
+    filtering(select)
+
+
+
+def filtering(pilih):
+    if pilih == 1:
+        italy()
+    elif pilih == 2:
+        indonesia()
+    elif pilih == 3:
+        japan()
+    elif pilih == 4:
+        unitedstates()
+    elif pilih == 5:
+        france()
+    elif pilih == 6:
+        korea()
+    elif pilih == 7:
+        german()
+    elif pilih == 8:
+        turkey()
+    elif pilih == 9:
+        print (r+"Exiting ..."+w)
+        sys.exit()
+    else:
+        sys.exit() 
+
+if __name__ == '__main__':
+    main()

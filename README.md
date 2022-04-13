@@ -6,8 +6,8 @@ XRecon - Simple Hackings Toolkit
 
 #### Credits
 
-• Creator : AriqGamerzcraft     
-• Youtube : Ariq Gamerzcraft     
+• Creator : Ariq     
+• Youtube : ~Ariq     
 • Contact : Private :D     
 • Github  : NamikazeZero     
 
